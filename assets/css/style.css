@@ -1,10 +1,17 @@
+body{
+  margin:
+}
+
 header{
+  display: flex;
+  align-items: center;
   padding: 30px;
   font-size: 35px;
   text-align: center;
 }
 
 nav{
+  display: flex;
   width: 80%;
   height: 50px;
   background-color: #555;
@@ -13,9 +20,29 @@ nav{
   margin-bottom: 15px;
 }
 
-Main{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 2px;
+nav ul{
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+}
 
+nav ul li{
+  list-style-type: none;
+}
+
+main{
+  display: grid;
+  grid-template-rows: 1fr 5fr 1fr;
+  grid-template-columns: 2fr 5fr 3fr;
+  grid-gap: .75em;
+
+}
+
+@media (max-width: 480px) {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  grid-template-rows: 1fr 1fr 5fr 1fr;
+  grid-template-columns: 2fr 5fr 3fr;
 }
