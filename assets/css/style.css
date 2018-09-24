@@ -3,33 +3,31 @@ body{
 }
 
 header{
-  display: flex;
-  align-items: center;
+  display: inline-block;
   padding: 30px;
   font-size: 35px;
   text-align: center;
 }
 
-nav{
-  display: flex;
-  width: 80%;
-  height: 50px;
+.site-nav{
+  display:flex;
+  justify-content: space-between;
   background-color: #555;
   overflow: auto;
   border-bottom: 5px solid #c2afaf;
   margin-bottom: 15px;
 }
 
-nav ul{
-  justify-content: space-evenly;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li{
+.site-list{
   list-style-type: none;
+  box-sizing: border-box;
 }
 
+li{
+  color: white;
+  padding: 20px;
+  display: inline-block;
+}
 main{
   display: grid;
   grid-template-rows: 1fr 5fr 1fr;
