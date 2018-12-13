@@ -39,25 +39,41 @@ header{
   color: white;
 }
 
-li{
+.nav{
   color: white;
   padding: .5em 1em;
   display: inline-block;
-  border-bottom: 2px solid rgb(174, 11, 214);
+  border-bottom: 2px solid #AE0BD7;
 }
 main{
   display: grid;
-  grid-template-columns: minmax(100px, 200px) 1fr 1fr;
+  grid-template-columns: minmax(150px, 200px) 1fr;
   grid-gap: 5px;
   background-color: white;
 }
 
 main > section{
-  background-color: pink;
+  background-color: #f9e7fe;
   text-align: center;
   padding: 1.2em 0;
   font-size: .7em;
   border: 1em;
+}
+
+p{
+  text-align: center;
+}
+
+li{
+  text-decoration: none;
+  list-style-position: inside;
+}
+
+footer{
+  padding-top: 30px;
+  text-align: center;
+  background-color: #555;
+  color: white;
 }
 
 @media (max-width: 480px) {
