@@ -45,6 +45,11 @@ header{
   display: inline-block;
   border-bottom: 2px solid #AE0BD7;
 }
+
+.nav > li > a {
+  text-decoration: none;
+  color: purple;
+}
 main{
   display: grid;
   grid-template-columns: minmax(150px, 200px) 1fr;
